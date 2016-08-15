@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ./ Riose --all --out ~/Desktop/Riose --version 0.0.0 --overwrite --icon=./app/img/app-icons/icns"
   },
   "repository": {
     "type": "git",
