@@ -2,20 +2,34 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="./css/app.css" />
+    <title>Riose</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
-    <h1 id="main-heading">Riose</h1>
-    <button id="riose-btn">Choose Ride</button>
-    <h1 id="choice"></h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    <span id="version-info">
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    </span>
+    <div class="container text-center">
+      <div class="row ">
+        <div class="col-sm-12">
+          <h1 id="main-heading">Choose a Ride</h1>
+          <button id="riose-btn" class="btn btn-primary" >Press ME</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h1 id="choice"></h1>
+        </div>
+      </div>
+      <!-- All of the Node.js APIs are available in this renderer process. -->
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <span id="version-info">
+          We are using node <script>document.write(process.versions.node)</script>,
+          Chromium <script>document.write(process.versions.chrome)</script>,
+          and Electron <script>document.write(process.versions.electron)</script>.
+          </span>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script>

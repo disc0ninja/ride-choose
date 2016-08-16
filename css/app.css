@@ -1,3 +1,17 @@
-#main-heading {
-  color: blue;
+#choice {
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes example {
+  0% {color: orange;}
+  25% {color: green; font-size: 2em;}
+  50% {color: orange; font-size: 4em;}
+  100% {color: green; font-size: 8em;}
+}
+
+#version-info {
+  font-size: .7em;
 }
