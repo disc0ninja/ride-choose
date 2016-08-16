@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
+  "name": "Riose",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Ride choosing helper app",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
