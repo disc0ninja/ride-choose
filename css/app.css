@@ -1,15 +1,17 @@
 #choice {
   -webkit-animation-name: example;
+  -webkit-animation-timing-function: ease-in;
   -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count:10;
+
 }
 
 
 @-webkit-keyframes example {
-  0% {color: orange;}
-  25% {color: green; font-size: 2em;}
-  50% {color: orange; font-size: 4em;}
-  100% {color: green; font-size: 8em;}
+  0% {background-color: orange; border-radius: 15px; font-size: 1em; box-shadow: inset 0 0 1em green, 0 0 1em gold;}
+  25% {background-color: green; font-size: 2em; border-radius: 30px; box-shadow: inset 0 0 2em orange, 0 0 1em green;}
+  50% {background-color: orange; font-size: 4em; border-radius: 45px; box-shadow: inset 0 0 4em green, 0 0 1em gold;}
+  100% {background-color: green; font-size: 8.5em; border-radius: 60px; box-shadow: inset 0 0 8em orange, 0 0 1em green;}
 }
 
 #version-info {

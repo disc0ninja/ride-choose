@@ -5,10 +5,14 @@ const rioseBtnElem = document.getElementById('riose-btn')
 const choiceElem = document.getElementById('choice')
 const chooseBtn = document.getElementById('choose-btn')
 
+const choose = (choice) => {
+  choiceElem.innerHTML = choice
+}
+
 chooseBtn.addEventListener('click', (event) => {
   const choice = options[Math.floor(Math.random() * options.length)]
-  console.log(choice)
-  choiceElem.innerHTML = choice
+  choose()
+  // choiceElem.innerHTML = choice
 })
 
 const options = []
