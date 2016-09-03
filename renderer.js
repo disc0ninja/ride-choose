@@ -6,6 +6,7 @@ const choiceElem = document.getElementById('choice')
 const chooseBtn = document.getElementById('choose-btn')
 
 const choose = (choice) => {
+  choiceElem.classList.add('animated')
   choiceElem.innerHTML = choice
 }
 
