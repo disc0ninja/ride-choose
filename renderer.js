@@ -3,9 +3,14 @@
 // All of the Node.js APIs are available in this process.
 const rioseBtnElem = document.getElementById('riose-btn')
 const choiceElem = document.getElementById('choice')
+const options = []
 
 rioseBtnElem.addEventListener('click', (event) => {
-  const options = ['Dirty Old Chevrolet', 'Mazda', 'Danger Ranger', 'Motor-Bicycles']
+  //  const options = ['Dirty Old Chevrolet', 'Mazda', 'Danger Ranger', 'Motor-Bicycles']
+  const optionInput = document.getElementById('option').value
+  options.push(optionInput)
+  console.log(options)
+
   const max = 1000000000000
   const min = 1
   const ans = Math.random() * (max - min) + min
